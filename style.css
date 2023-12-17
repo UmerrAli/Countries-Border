@@ -25,8 +25,7 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  margin-top: 20px;
-  width: 100%;
+  margin-top: 40px;
 }
 
 #country-search {
@@ -91,6 +90,12 @@ body {
 .neighbour {
   transform: scale(0.8) translateY(1rem);
   margin-left: 0;
+}
+/* Media query for mobile devices (adjust the max-width as needed) */
+@media only screen and (max-width: 659px) {
+  .neighbour {
+    margin: auto; /* Change margin-left for mobile devices */
+  }
 }
 
 .country__img {
